@@ -29,3 +29,9 @@ export PATH=$PATH:$HADOOP_HOME/bin
 
 #Mahout home
 export MAHOUT_HOME=/storage/Master_thesis/mahout/mahout-distribution-0.7
+# Add Mahout bin/ directory to PATH
+export PATH=$PATH:$MAHOUT_HOME/bin
+
+#various aliases
+alias gitc="git commit"
+alias gits="git status"
