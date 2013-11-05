@@ -37,4 +37,5 @@ export PATH=$PATH:$MAHOUT_HOME/bin
 alias gitc="git commit"
 alias gits="git status"
 alias gitp="git push"
-
+alias gita="git add -A"
+alias gitl="git log"
