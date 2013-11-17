@@ -1,6 +1,6 @@
 # some more ls aliases
 alias ll='ls -lFh'
-alias la='ls -al'
+alias la='ls -Al'
 alias l='ls -CF'
 alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
