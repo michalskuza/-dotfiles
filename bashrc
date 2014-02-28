@@ -13,11 +13,3 @@ HISTSIZE=100000
 HISTFILESIZE=100000
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-
-# various aliases
-# git
-alias gitc="git commit"
-alias gits="git status"
-alias gitp="git push"
-alias gita="git add -A"
-alias gitl="git log"
