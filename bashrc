@@ -13,3 +13,6 @@ HISTSIZE=100000
 HISTFILESIZE=100000
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+
+alias untar='tar xvfz'
+
