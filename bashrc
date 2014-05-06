@@ -6,6 +6,7 @@ alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 alias less='less -R'
+alias duh='du -h --max-depth=1'
 
 shopt -s histappend
 PROMPT_COMMAND='history -n;history -a'
