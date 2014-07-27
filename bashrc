@@ -2,6 +2,7 @@
 alias ll='ls -lFh'
 alias la='ls -Al'
 alias l='ls -CF'
+alias li='ls -1'
 alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
