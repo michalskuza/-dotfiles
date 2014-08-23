@@ -49,7 +49,10 @@ set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden             " Hide buffers when they are abandoned
-set mouse=v		" Enable mouse usage (all modes)
+if has("mouse") " Enable mouse usage
+    set mouse=a
+endif
+"set mouse=v		" Enable mouse usage (vertical scrolling only)
 set number		" Show number
 set hlsearch 		" Highlights search item
 set shortmess+=I	" Remove splash screen
