@@ -12,6 +12,8 @@ PROMPT_COMMAND='history -n;history -a'
 HISTSIZE=100000
 HISTFILESIZE=100000
 
+export PATH=/usr/local/bin:$PATH
+
 # Coreutils
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 alias man='_() { echo $1; man -M $(brew --prefix)/opt/coreutils/libexec/gnuman $1 1>/dev/null 2>&1;  if [ "$?" -eq 0 ]; then man -M $(brew --prefix)/opt/coreutils/libexec/gnuman $1; else man $1; fi }; _'
