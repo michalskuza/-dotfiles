@@ -24,6 +24,6 @@ alias grep='ggrep --color=always'
 alias fgrep='ggrep -F --color=always'
 alias egrep='ggrep -E --color=always'
 
-# Colors
+# Colours
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
