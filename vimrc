@@ -69,3 +69,22 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+" Make the 81st column stand out 
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+" Make tabs, trailing whitespace, and non-breaking spaces visible 
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
+
+" Swap : and ; to make colon commands easier to type 
+" nnoremap  ;  :
+" nnoremap  :  ;
+
+" Swap v and CTRL-V, because Block mode is more useful that Visual mode
+
+" nnoremap    v   <C-V>
+" nnoremap <C-V>     v
+
+" vnoremap    v   <C-V>
+" vnoremap <C-V>     v
