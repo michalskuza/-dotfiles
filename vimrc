@@ -88,3 +88,5 @@ set list
 
 " vnoremap    v   <C-V>
 " vnoremap <C-V>     v
+
+set laststatus=2
