@@ -16,6 +16,7 @@
 		ci = commit
 		st = status
 		br = branch
+		dc = diff --cached
 [push]
         default = simple
 
