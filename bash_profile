@@ -4,6 +4,7 @@ alias ll='ls -lFh'
 alias la='ls -Al'
 alias l='ls -CF'
 alias li='ls -1'
+
 alias less='less -R'
 alias duh='du -h -d 1'
 alias untar='tar xvfz'
@@ -14,9 +15,9 @@ HISTSIZE=100000
 HISTFILESIZE=100000
 
 export PATH=/usr/local/bin:$PATH
-
-# Coreutils
+#Coreutils
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+#export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 alias man='_() { echo $1; man -M $(brew --prefix)/opt/coreutils/libexec/gnuman $1 1>/dev/null 2>&1;  if [ "$?" -eq 0 ]; then man -M $(brew --prefix)/opt/coreutils/libexec/gnuman $1; else man $1; fi }; _'
 
 #using GNU grep
@@ -26,4 +27,10 @@ alias egrep='ggrep -E --color=always'
 
 # Colours
 export CLICOLOR=1
-export LSCOLORS=dxfxcxdxbxegedabagacad
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+alias find='gfind'
+alias locate='glocate'
+alias updatedb='gupdatedb'
+alias xargs='gxargs'
+alias g='git'
