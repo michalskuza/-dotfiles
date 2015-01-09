@@ -36,3 +36,4 @@ alias xargs='gxargs'
 alias g='git'
 alias j='java'
 alias jc='javac'
+alias gpurge="git reset HEAD --hard && git clean -fd"
