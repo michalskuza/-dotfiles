@@ -17,6 +17,7 @@
 		st = status
 		br = branch
 		dc = diff --cached
+		wipe = !git reset HEAD --hard && git clean -fd
 [push]
         default = simple
 
