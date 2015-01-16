@@ -18,6 +18,7 @@
 		br = branch
 		dc = diff --cached
 		wipe = !git reset HEAD --hard && git clean -fd
+		undo = !git reset --hard HEAD~1
 [push]
         default = simple
 
