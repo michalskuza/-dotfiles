@@ -16,11 +16,11 @@
 		ci = commit
 		st = status
 		br = branch
-		cm = commit
 		remotes = remote -v
 		dc = diff --cached
 		wipe = !git reset HEAD --hard && git clean -fd
 		undo = !git reset --hard HEAD~1
+		bl = blame
 [push]
         default = simple
 
