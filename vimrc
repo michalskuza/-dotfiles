@@ -47,5 +47,7 @@ set laststatus=2
 
 " Toggle auto-indenting for code paste
 nnoremap <F2> :set invpaste paste?<CR>
+" Toggle last search highlighting
+nnoremap <F3> :set hlsearch!<CR>
 set pastetoggle=<F2>
 set showmode
