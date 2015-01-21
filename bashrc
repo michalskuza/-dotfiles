@@ -16,3 +16,5 @@ HISTFILESIZE=100000
 
 alias untar='tar xvfz'
 alias g='git'
+alias j='java'
+alias jc='javac'
