@@ -8,7 +8,6 @@
 [alias]
 		lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%Creset' --abbrev-commit --date=relative
 		la = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd, %cn)%Creset' --abbrev-commit --date=short
-		hist = log --graph --pretty=format:'%h %ad | %s%d [%an]' --date=short
 		last = log -1 HEAD
 		unstage = reset HEAD --hard
 		amend = commit --amend -C HEAD
