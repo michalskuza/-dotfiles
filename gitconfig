@@ -21,6 +21,14 @@
 		undo = !git reset --hard HEAD~1
 		bl = blame
 		
+		#reset commands
+		r = reset
+		r1 = reset HEAD^
+		r2 = reset HEAD^^
+		rh = reset --hard
+		rh1 = reset HEAD^ --hard
+		rh2 = reset HEAD^^ --hard
+
 		#git svn
 		svnr = svn rebase
 		svnd = svn dcommit
