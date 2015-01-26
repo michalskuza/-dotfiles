@@ -11,9 +11,10 @@
 		last = log -1 HEAD
 		unstage = reset HEAD --hard
 		amend = commit --amend -C HEAD
+		cl = clone
 		co = checkout
 		ci = commit
-		st = status
+		st = status -s
 		br = branch
 		remotes = remote -v
 		dc = diff --cached
