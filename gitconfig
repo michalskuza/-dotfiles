@@ -5,6 +5,31 @@
 	editor = vim
 [merge]
         tool = vimdiff
+        
+# color {{{
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = red reverse
+	local = blue
+	remote = green
+
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red bold
+	new = green
+	plain = white
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+# }}}
+
 [alias]
 		lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%Creset' --abbrev-commit --date=relative
 		la = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd, %cn)%Creset' --abbrev-commit --date=short
