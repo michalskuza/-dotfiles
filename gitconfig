@@ -28,6 +28,11 @@
 		rh = reset --hard
 		rh1 = reset HEAD^ --hard
 		rh2 = reset HEAD^^ --hard
+		
+		#stash commands
+		sl = stash list
+		sa = stash apply
+		ss = stash save
 
 		#git svn
 		svnr = svn rebase
