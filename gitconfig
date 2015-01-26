@@ -56,7 +56,6 @@
 		grep = grep -Ii
 		gr = grep -Ii
 
-
 		showall = "!git config -l | grep alias --color=always"
 [push]
         default = simple
