@@ -20,6 +20,11 @@
 		wipe = !git reset HEAD --hard && git clean -fd
 		undo = !git reset --hard HEAD~1
 		bl = blame
+		
+		#git svn
+		svnr = svn rebase
+		svnd = svn dcommit
+		svnl = svn log --oneline --show-commit
 [push]
         default = simple
 
