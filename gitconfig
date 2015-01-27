@@ -42,6 +42,7 @@
 		wipe = !git reset HEAD --hard && git clean -fd
 		undo = !git reset --hard HEAD~1
 		bl = blame
+		rmc = rm --cached
 		
 		#reset commands
 		r = reset
