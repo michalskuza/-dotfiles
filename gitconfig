@@ -43,7 +43,8 @@
 		undo = !git reset --hard HEAD~1
 		bl = blame
 		rmc = rm --cached
-		
+		cpn = cherry-pick -n
+
 		#reset commands
 		r = reset
 		r1 = reset HEAD^
