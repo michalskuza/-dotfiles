@@ -62,6 +62,7 @@
 		svnr = svn rebase
 		svnd = svn dcommit
 		svnl = svn log --oneline --show-commit
+		svncl = svn clone
 		
 		#assume aliases
 		assume = update-index --assume-unchanged
