@@ -34,7 +34,7 @@
 		cl = clone
 		co = checkout
 		ci = commit
-		st = status -s
+		st = status
 		br = branch
 		remotes = remote -v
 		dc = diff --cached
