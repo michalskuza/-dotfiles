@@ -36,6 +36,7 @@
 		ci = commit
 		st = status
 		br = branch
+		rb = rebase
 		remotes = remote -v
 		dc = diff --cached
 		dlc = diff --cached HEAD^
