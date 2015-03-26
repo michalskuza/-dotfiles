@@ -79,6 +79,7 @@
 		f = "!git ls-files | grep -i --color=always"
 		grep = grep -Ii
 		gr = grep -Ii
+		lf = diff-tree --no-commit-id --name-only -r
 
 		showall = "!git config -l | grep alias --color=always"
 [push]
