@@ -20,3 +20,7 @@ alias j='java'
 alias jc='javac'
 alias jp='javap'
 alias jpv='javap -verbose'
+
+function quick-whois () {
+    command whois "domain ${1}"
+}

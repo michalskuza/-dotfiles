@@ -14,6 +14,8 @@ PROMPT_COMMAND='history -n;history -a'
 HISTSIZE=100000
 HISTFILESIZE=100000
 
+export desktop=/Users/Michal/Desktop
+
 export PATH=/usr/local/bin:$PATH
 #Coreutils
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
@@ -25,8 +27,15 @@ alias grep='ggrep --color=always'
 alias fgrep='ggrep -F --color=always'
 alias egrep='ggrep -E --color=always'
 
+# brew analytics
+export HOMEBREW_NO_ANALYTICS=1
+
 # Colours
 export CLICOLOR=1
+export LSCOLORS=dxfxcxdxbxegedabagacad
+alias untar='tar xvfz'
+
+export PATH=/usr/local/bin:$PATH
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 alias find='gfind'
@@ -35,6 +44,11 @@ alias updatedb='gupdatedb'
 alias xargs='gxargs'
 alias g='git'
 alias j='java'
+alias n='npm'
 alias jc='javac'
 alias jp='javap'
 alias jpv='javap -verbose'
+
+function quick-whois () {
+    command whois "domain ${1}"
+}
