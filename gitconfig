@@ -26,71 +26,71 @@
 # }}}
 
 [alias]
-		lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%Creset' --abbrev-commit --date=relative
-		la = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd, %cn)%Creset' --abbrev-commit --date=short
-		last = log -1 HEAD
-		unstage = reset HEAD --hard
-		amend = commit --amend -C HEAD
-		cl = clone
-		co = checkout
-		cob = checkout -b
-		ci = commit
-		cm = commit -m
-		st = status
-		br = branch
-		rb = rebase
-		remotes = remote -v
-		dc = diff --cached
-		dlc = diff --cached HEAD^
-		wipe = !git reset HEAD --hard && git clean -fd
-		undo = !git reset --hard HEAD~1
-		bl = blame
-		rmc = rm --cached
-		cp = cherry-pick
-		cpn = cherry-pick -n
-		adu = add -u
-		adc = !git add -u && git commit --amend -C HEAD
-		# list branches sorted by last modified
-		b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%Creset' --abbrev-commit --date=relative
+	la = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd, %cn)%Creset' --abbrev-commit --date=short
+	last = log -1 HEAD
+	unstage = reset HEAD --hard
+	amend = commit --amend -C HEAD
+	cl = clone
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	cm = commit -m
+	st = status
+	br = branch
+	rb = rebase
+	remotes = remote -v
+	dc = diff --cached
+	dlc = diff --cached HEAD^
+	wipe = !git reset HEAD --hard && git clean -fd
+	undo = !git reset --hard HEAD~1
+	bl = blame
+	rmc = rm --cached
+	cp = cherry-pick
+	cpn = cherry-pick -n
+	adu = add -u
+	adc = !git add -u && git commit --amend -C HEAD
+	# list branches sorted by last modified
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	
+	#reset commands
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+	
+	#stash commands
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+		
+	#assume aliases
+	assume = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+		
+	#show assumed files
+	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+		
+	#unassume all the assumed files
+	unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
+	assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
+		
+	filelog = log -u
+	fl = log -u
+	f = "!git ls-files | grep -i --color=always"
+	grep = grep -Ii
+	gr = grep -Ii
+	lf = diff-tree --no-commit-id --name-only -r
 
-		#reset commands
-		r = reset
-		r1 = reset HEAD^
-		r2 = reset HEAD^^
-		rh = reset --hard
-		rh1 = reset HEAD^ --hard
-		rh2 = reset HEAD^^ --hard
+	all = "!git config -l | grep alias --color=always"
 		
-		#stash commands
-		sl = stash list
-		sa = stash apply
-		ss = stash save
-		
-		#assume aliases
-		assume = update-index --assume-unchanged
-		unassume = update-index --no-assume-unchanged
-		
-		#show assumed files
-		assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-		
-		#unassume all the assumed files
-		unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
-		assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
-		
-		filelog = log -u
-		fl = log -u
-		f = "!git ls-files | grep -i --color=always"
-		grep = grep -Ii
-		gr = grep -Ii
-		lf = diff-tree --no-commit-id --name-only -r
-
-		all = "!git config -l | grep alias --color=always"
-		
-		#git svn		
-		svncl = svn clone
-		svnl = svn log --oneline --show-commit		
-		svnr = svn rebase		
-		svnd = svn dcommit		
+	#git svn		
+	svncl = svn clone
+	svnl = svn log --oneline --show-commit		
+	svnr = svn rebase		
+	svnd = svn dcommit		
 [push]
         default = simple
 
