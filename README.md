@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-My  Unix/Linux configuration files
+My  Linux/Vim/Git etc. configuration files
