@@ -1,0 +1,23 @@
+*.swp
+.*.swp
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.stackdump
+npm-debug.log
+node_modules/
+*.js.js
+.idea/
+.project/
+*.eml
+# IntelliJ Idea
+*.iml
+# Java target
+*.log
+target/
