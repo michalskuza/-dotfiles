@@ -24,3 +24,6 @@ alias jpv='javap -verbose'
 function quick-whois () {
     command whois "domain ${1}"
 }
+
+#maven
+export skip=-Dmaven.test.skip=true
