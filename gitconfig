@@ -5,6 +5,7 @@
 	editor = vim
 [merge]
         tool = vimdiff
+	excludesfile = ~/.gitignore_global
         
 # color {{{
 [color]
