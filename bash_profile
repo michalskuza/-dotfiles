@@ -4,6 +4,7 @@ alias ll='ls -lFh'
 alias la='ls -Al'
 alias l='ls -CF'
 alias li='ls -1'
+alias ltr='ls -ltr'
 
 alias less='less -R'
 alias duh='du -h -d 1'
